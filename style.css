@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    background-color: transparent;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    --primar-color: #2C3639;
+    --secondary-color: #3F4E4F;
+    --brown-color: #A27B5C;
+    --light-grey: #DCD7C9;
+}
+
+nav {
+    background-color: var(--light-grey);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    margin: 20px;
+    color: var(--primar-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    /* text-shadow: 2px 4px 6px black; */
+    color: var(--secondary-color);
+    text-decoration: underline;
+    /* background: red;
+    padding: 20px 0;     */
+}
+
+video{
+    width: 100%;
+    height: 585px;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    top: 500px;
+    left: 300px;
+}
+
+.overlay h1{
+    font-size: 50px;
+    color: white;
+    opacity: 0.5;
+    transition: 2s;
+}
+
+.overlay h1:hover{
+    font-size: 70px;
+    color: white;
+    opacity: 1;
+}
+
+span{
+    color: red;
+    font-size: 40px;
+}
+
+#home{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+#home::before{
+    content: "";
+    background-image: url(https://www.dmarge.com/wp-content/uploads/2021/01/dwayne-the-rock-.jpg);
+    height: 100%;
+    background-size: cover;
+}
+
+.main{
+border: 3px inset red;
+padding: 10px;
+display: flex;
+position: absolute;
+left: 950px;
+margin-top: 400px;
+box-shadow: 2px 4px 6px black;
+}
+
+.main:hover{
+    scale: 1.05;
+}
+
+h3{
+    color: var(--primar-color);
+    background-color: var(--light-grey);
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+.pic{
+    display: flex;
+}
+
+.pic img{
+    width: 400px;
+    border: 1px  solid black;
+    margin: 20px;
+}
+
+.pic h4{
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.pic p{
+    text-align: justify;
+    margin: 10px;
+}
+
+.gallery{
+    box-shadow: 2px 4px 6px black;
+    padding: 30px 10px;
+}
+
+.gallery img{
+    width: 380px;
+    margin: 30px;
+    /* margin-bottom: 50px;
+    margin-left: 50px; */
+    border: 1px solid black;
+}
+
+.gallery img:hover{
+    scale: 1.05;
+}
+
+
+ .row{
+    margin: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+  .box{
+    width:300px;
+    height: 500px;
+    /* box-shadow: 4px 4px 6px rgba(0, 0, 0, .5); */
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 15px;
+    align-items: center;
+    background: linear-gradient(to top ,rgb(168, 166, 166) 50%,white 50%);
+    /* rgb(162,57,207)50%,rgb(233,227,227)50% */
+    background-size: 100% 200%;
+ 
+    transition: all 1.05s;
+}
+
+.box:hover{
+    background-position: right bottom;
+    filter: drop-shadow(3px 4px 20px grey);
+}
+
+
+  .box img{
+    width: 100%;
+}
+
+.box p{
+    text-align: justify;
+    padding: 5px;
+}
+
+.box h5{
+    font-size: 25px;
+    text-align: center;
+    color: var(--primar-color);
+    text-shadow: 2px 3px 4px rgb(136, 133, 133);
+}
+
+form{
+    width: 500px;
+    margin: 10px auto;
+    /* align-self: center; */
+}
+
+.input{
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+}
+
+button{
+    color: #fff;
+    background: var(--primar-color);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.cv{
+    background: var(--primar-color);
+    color: var(--light-grey);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin:auto 10px ;
+    border-radius: 20px;
+}
+
+#about{
+    padding-bottom: 40px;
+}
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    background: var(--primar-color);
+    padding: 30px 0;
+}
+
+footer h4{
+    color: var(--light-grey)
+
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
